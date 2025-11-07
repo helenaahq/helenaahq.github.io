@@ -1,14 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Page Title</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
-<script src=""></script>
-<!--- Code above this line will not be displayed on the browser -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    .home-hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding-top: 80px;
+    }
+
+    .home-hero-content {
+      max-width: 800px;
+      padding: 0 25px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-out forwards;
+      opacity: 0;
+    }
+
+    .home-hero h1 {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 1.4em;
+      margin-bottom: 20px;
+    }
+
+    .home-hero p {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.15em;
+      line-height: 1.9;
+      max-width: 700px;
+      margin: 0 auto 25px;
+      text-align: left;
+    }
+
+    .home-links {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 25px;
+      font-family: 'EB Garamond', serif;
+      font-size: 1.1em;
+    }
+
+    .home-links li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+
 <body>
-<p> Welcom! </p>
+  <!-- === Navigation Bar === -->
+  <nav class="navbar">
+    <div class="logo">Your Name</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about/about.html">About</a></li>
+      <li><a href="research/research.html">Research</a></li>
+      <li><a href="teaching/teaching.html">Teaching</a></li>
+      <li><a href="contact/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- === Hero Section === -->
+  <section class="home-hero">
+    <div class="home-hero-content">
+      <h1>Hi, I'm [Your Name]</h1>
+
+      <p>
+        I'm an undergraduate student at [Your University], majoring in [Your Majors].
+        I'm broadly interested in [your main areas, e.g., data visualization, HCI, and machine learning],
+        especially in building interactive ways for people to explore data and uncover meaningful patterns.
+      </p>
+
+      <p>
+        This website collects my research, publications, teaching experience, and ways to get in touch.
+      </p>
+
+      <ul class="home-links">
+        <li>Learn more <a href="about/about.html">about me</a>.</li>
+        <li>See my <a href="research/research.html">research projects</a> and <a href="research/publications.html">publications</a>.</li>
+        <li>Read about my <a href="teaching/teaching.html">teaching & mentoring experience</a>.</li>
+        <li>Find my email and other links on the <a href="contact/contact.html">contact page</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- === Footer === -->
+  <footer>
+    <p>© 2025 Your Name · All rights reserved.</p>
+  </footer>
 </body>
 </html>
